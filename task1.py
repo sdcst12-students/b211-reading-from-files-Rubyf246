@@ -9,7 +9,14 @@ Example:
 assert find('apple') == 0
 assert find('fish') == 5
 '''
+
 def find(needle):
+    datatask1 = 'task01.txt'
+    data1 = open(datatask1,'r')
+    data = data1.read()
+    print (data)
+
+
     pass
 
 
