@@ -13,7 +13,12 @@ Create a function that reads the specific value for a specific level and an armo
 """
 
 def target(lvl,ac):
-    return
+    datatask1 = 'task04.txt'
+    data1 = open(datatask1,'r')
+    lines = data1.readlines()
+   # print (lines[4])
+    tgt_num_list = lines[lvl-1].split() # split a line into a list
+    return int(tgt_num_list[10-ac])
 
 
 def tests():
@@ -23,3 +28,4 @@ def tests():
 
 if __name__=="__main__":
     tests()
+    #print(target(3,7) )
